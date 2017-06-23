@@ -4,220 +4,297 @@
         <title>
             HOME61
         </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div id="header">
-                <div id="head_logo">
+        <div id="header_mobile" class="container-fluid visible-xs">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="head_logo">
+                            <img src="images/home.png">
+                            <span class="logo-text">HOME
+                                <span class="green">61</span>
+                            </span>
+                            <span class="beta">BETA</span>
+                        </div>
+                        <div class="head_phone mobile">
+                            <img src="images/phone.png">
+                            <span class="phone">+1 (844) 843-6161</span>
+                        </div>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Restals</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">My Homes</a></li>
+                            <li><a href="#">My Calendar</a></li>
+                            <li><a href="#">Neighborhoods</a></li>
+                            <li>
+                                <div class="profile-link mobile">
+                                    <img src="images/profile.png">
+                                    <a href="#">My Profile</a>
+                                    <img src="images/arrow_small.png">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="listings-link listings-link-mobile">
+                                    <a href="#">Post your listings</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+        <div id="header" class="container-fluid hidden-xs">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-2 head_logo">
                     <img src="images/home.png">
                     <span class="logo-text">HOME
                         <span class="green">61</span>
                     </span>
                     <span class="beta">BETA</span>
                 </div>
-                <div id="head_phone">
+                <div class="col-sm-12 col-md-6 col-lg-2 head_phone">
                     <img src="images/phone.png">
                     <span class="phone">+1 (844) 843-6161</span>
                 </div>
-                <div id="head_right">
-                    <div id="head_menu">
-                        <ul class="head-menu">
-                            <li><a href="#">Restals</a></li>
-                            <li><a href="#">Sales</a></li>
-                            <li><a href="#">My Homes</a></li>
-                            <li><a href="#">My Calendar</a></li>
-                            <li><a href="#">Neighborhoods</a></li>
-                        </ul>
+                <div id="head_profile" class="col-sm-12 col-md-4 col-lg-2">
+                    <img src="images/profile.png">
+                    <div class="profile-link">
+                        <a href="#">My Profile</a>
+                        <img src="images/arrow_small.png">
                     </div>
-                    <div id="head_profile">
-                        <img src="images/profile.png">
-                        <div class="profile-link">
-                            <a href="#">My Profile</a>
-                            <img src="images/arrow_small.png">
-                        </div>
-                        <div class="listings-link">
-                            <a href="#">Post your listings</a>
-                        </div>
+                    <div class="listings-link">
+                        <a href="#">Post your listings</a>
                     </div>
                 </div>
-            </div>
-        <div id="application_header">
-            <p class="text-annotation-small">HOME > RENTAL APPLICATION</p>
-            <h1>Rental application</h1>
-        </div>
-        <div id="application">
-                <div id="form_wrapper">
-                    <div id="personal_information" class="row">
-                        <div class="col-sm-12"><h1>Personal information</h1></div>
-                    </div>
-                    <div id="form_personal" class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">FIRST NAME</p>
-                            <input type="text" value="Enter first name">
-                            <p class="form_header">CELL PHONE</p>
-                            <input type="text" value="ex: 123-567-8999">
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">LAST NAME</p>
-                            <input type="text" value="Enter last name">
-                            <p class="form_header">WORK PHONE</p>
-                            <input type="text" value="ex: 123-567-8999">
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">DATE OF BIRTH</p>
-                            <select class="day"><option>Day</option></select>
-                            <select class="month"><option>Month</option></select>
-                            <select class="year"><option>Year</option></select>
-                            <p class="form_header">GROSS INCOME</p>
-                            <input type="text" class="input-short" value="ex: 20,000"><select class="month-single"><option>Month</option></select>
-                        </div>
-                    </div>
-                    <div id="other_information" class="row">
-                        <div class="col-sm-12"><p class="other_information">Other Proposed Occupant</p></div>
-                    </div>
-                    <div id="form_other" class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">FIRST NAME</p>
-                            <input type="text" value="Enter first name">
-                            <p class="form_header">RELATION</p>
-                            <select class="select-long"><option>Spouse</option></select>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">LAST NAME</p>
-                            <input type="text" value="Enter last name">
-                            <p class="form_header"> </p>
-                            <input type="text" class="no-header" value="Irina Marin">
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">GROSS INCOME</p>
-                            <input type="text" class="input-short" value="ex: 20,000"><select class="month-single"><option>Month</option></select>
-                        </div>
-                    </div>
-                    <div id="rental_history" class="row">
-                        <div class="col-sm-12">
-                            <h1>Rental History</h1>
-                            <p class="form_header">PREVIOUS ADDRESS</p>
-                            <input type="text" class="input-long" value="Enter address">
-                        </div>
-                    </div>
-                    <div id="form_rental_history" class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">CITY</p>
-                            <input type="text" value="ex: Miami">
-                            <p class="form_header">ZIP CODE</p>
-                            <input type="text" value="ex: 11111">
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">PHONE</p>
-                            <input type="text" value="ex: 123-567-8999">
-                            <p class="form_header">DATE IN</p>
-                            <select class="day"><option>Day</option></select>
-                            <select class="month"><option>Month</option></select>
-                            <select class="year"><option>Year</option></select>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">STATE</p>
-                            <input type="text" value="ex: Ml">
-                            <p class="form_header">DATE OUT</p>
-                            <select class="day"><option>Day</option></select>
-                            <select class="month"><option>Month</option></select>
-                            <select class="year"><option>Year</option></select>
-                        </div>
-                    </div>
-                    <div id="reason_form" class="row">
-                        <div class="col-sm-12">
-                            <p class="form_header">REASON FOR MOVING</p>
-                            <textarea class="input-reason"></textarea>
-                        </div>
-                    </div>
-                    <div id="employment_info" class="row">
-                        <div class="col-sm-12">
-                            <h1>Employment Information</h1>
-                            <p class="form_header">PRESENT OCCUPATION OR SOURCE OF INCOME</p>
-                            <input type="text" class="input-long" value="Enter address">
-                        </div>
-                    </div>
-                    <div id="employment_form" class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">START DAY</p>
-                            <select class="day"><option>Day</option></select>
-                            <select class="month"><option>Month</option></select>
-                            <select class="year"><option>Year</option></select>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">EMPLOYER NAME</p>
-                            <input type="text" value="ex: John Doe">
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <p class="form_header">EMPLOYER PHONE</p>
-                            <input type="text" value="ex: 123-567-8999">
-                        </div>
-                    </div>
-                    <div id="employer_address" class="row">
-                        <div class="col-sm-12">
-                            <p class="form_header">EMPLOYER ADDRESS</p>
-                            <input type="text" class="input-long" value="Enter address">
-                        </div>
-                    </div>
-                    <div id="submit" class="row">
-                        <div class="col-sm-12">
-                            <input type="submit" class="submit-button" value="Submit">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div id="contacts">
-                <div id="contacts-wrapper" class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-4 contacts-row">
-                        <p class="contacts_header">SOUTH BEACH CONDO AND APARTMENTS</p>
-                        <p class="contacts_text">
-                            114 East 98th Street, Unit 4W<br>
-                            900 Byscayne Brickell<br>
-                            1220 Dixie Highway, Coal Gables
-                        </p>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 contacts-row">
-                        <p class="contacts_header">NORTH MIAMI CONDO AND APARTMENTS</p>
-                        <p class="contacts_text">
-                            114 East 98th Street, Unit 4W<br>
-                            900 Byscayne Brickell<br>
-                            1220 Dixie Highway, Coal Gables
-                        </p>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 contacts-row">
-                        <p class="contacts_header">DOWNTOWN MIAMI CONDO AND APARTMENTS</p>
-                        <p class="contacts_text">
-                            114 East 98th Street, Unit 4W<br>
-                            900 Byscayne Brickell<br>
-                            1220 Dixie Highway, Coal Gables
-                        </p>
-                    </div>
-                </div>
-        </div>
-        <div id="footer">
-            <div id="footer-wrapper">
-                <div id="footer-menu">
-                    <ul>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Partner</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Terms&Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                <div id="head_menu" class="col-sm-12 col-md-8 col-lg-4">
+                    <ul class="head-menu">
+                        <li><a href="#">Restals</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="#">My Homes</a></li>
+                        <li><a href="#">My Calendar</a></li>
+                        <li><a href="#">Neighborhoods</a></li>
                     </ul>
-                    <p class="copyright">2014&copy;HOME<span class="green">61</span>.All Rights Reserved.</p>
-                </div>
-                <div id="social">
-                    <a href="https://www.linkedin.com"><img src="images/In.png"></a>
-                    <a href="https://www.google.com"><img src="images/google.png"></a>
-                    <a href="https://www.twitter.com"><img src="images/twitter.png"></a>
-                    <a href="https://www.facebook.com"><img src="images/facebook.png"></a>
                 </div>
             </div>
-        </div>
-        <div id="copyright">
+        </div >
+        <div id="main" class="container-fluid">
+                <div id="application_header">
+                    <p class="text-annotation-small">HOME > RENTAL APPLICATION</p>
+                    <h1>Rental Application</h1>
+                </div>
+                <div id="application">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1>Personal information</h1>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">FIRST NAME</p>
+                                <input type="text" name="first_name" placeholder="Enter first name">
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">LAST NAME</p>
+                                <input type="text" name="last_name" placeholder="Enter last name">
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">DATE OF BIRTH</p>
+                                <select class="day"><option>Day</option></select>
+                                <select class="month"><option>Month</option></select>
+                                <select class="year"><option>Year</option></select>
+                            </div>
+                            <div class="clearfix visible-lg"></div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">CELL PHONE</p>
+                                <input type="text" name="phone" placeholder="ex: 123-567-8999">
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">WORK PHONE</p>
+                                <input type="text" name="work_phone" placeholder="ex: 123-567-8999">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">GROSS INCOME</p>
+                                <input type="text" class="input-short" placeholder="ex: 20,000">
+                                <select class="month-single"><option>Month</option></select>
+                            </div>
+                        </div>
+                        <div id="other_information" class="row">
+                            <div class="col-sm-12"><p class="other_information">Other Proposed Occupant</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">FIRST NAME</p>
+                                <input type="text" placeholder="Enter first name">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">LAST NAME</p>
+                                <input type="text" placeholder="Enter last name">
+                            </div>
+                            <div class="clearfix visible-md"></div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">GROSS INCOME</p>
+                                <input type="text" class="input-short" placeholder="ex: 20,000"><select class="month-single"><option>Month</option></select>
+                            </div>
+                            <!--<div class="clearfix visible-bg"></div>-->
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">RELATION</p>
+                                <select class="select-long"><option>Spouse</option></select>
+                            </div>
+                            <div class="clearfix visible-md"></div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header"> </p>
+                                <input type="text" class="no-header" placeholder="Irina Marin">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1>Rental History</h1>
+                                <p class="form_header">PREVIOUS ADDRESS</p>
+                                <input type="text" class="input-long" placeholder="Enter address">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">CITY</p>
+                                <input type="text" placeholder="ex: Miami">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">PHONE</p>
+                                <input type="text" placeholder="ex: 123-567-8999">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">STATE</p>
+                                <input type="text" placeholder="ex: Ml">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <p class="form_header">ZIP CODE</p>
+                                <input type="text" placeholder="ex: 11111">
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <p class="form_header">DATE IN</p>
+                                        <select class="day"><option>Day</option></select>
+                                        <select class="month"><option>Month</option></select>
+                                        <select class="year"><option>Year</option></select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <p class="form_header">DATE OUT</p>
+                                        <select class="day"><option>Day</option></select>
+                                        <select class="month"><option>Month</option></select>
+                                        <select class="year"><option>Year</option></select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="form_header">REASON FOR MOVING</p>
+                                        <textarea class="input-reason"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h1>Employment Information</h1>
+                                        <p class="form_header">PRESENT OCCUPATION OR SOURCE OF INCOME</p>
+                                        <input type="text" class="input-long" placeholder="Enter address">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <p class="form_header">START DAY</p>
+                                        <select class="day"><option>Day</option></select>
+                                        <select class="month"><option>Month</option></select>
+                                        <select class="year"><option>Year</option></select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <p class="form_header">EMPLOYER NAME</p>
+                                        <input type="text" placeholder="ex: John Doe">
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <p class="form_header">EMPLOYER PHONE</p>
+                                        <input type="text" placeholder="ex: 123-567-8999">
+                                    </div>
+                                </div>
+                                <div id="employer_address" class="row">
+                                    <div class="col-sm-12">
+                                        <p class="form_header">EMPLOYER ADDRESS</p>
+                                        <input type="text" class="input-long" placeholder="Enter address">
+                                    </div>
+                                </div>
+                                <div id="submit" class="row">
+                                    <div class="col-sm-12">
+                                        <input type="submit" class="submit-button" value="Submit">
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+        <div id="footer" class="container-fluid">
+            <div id="contacts">
+                        <div id="contacts-wrapper" class="row">
+                            <div class="col-sm-6 col-md-4 col-lg-4 contacts-row">
+                                <p class="contacts_header">SOUTH BEACH CONDO AND APARTMENTS</p>
+                                <p class="contacts_text">
+                                    114 East 98th Street, Unit 4W<br>
+                                    900 Byscayne Brickell<br>
+                                    1220 Dixie Highway, Coal Gables
+                                </p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4 contacts-row">
+                                <p class="contacts_header">NORTH MIAMI CONDO AND APARTMENTS</p>
+                                <p class="contacts_text">
+                                    114 East 98th Street, Unit 4W<br>
+                                    900 Byscayne Brickell<br>
+                                    1220 Dixie Highway, Coal Gables
+                                </p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4 contacts-row">
+                                <p class="contacts_header">DOWNTOWN MIAMI CONDO AND APARTMENTS</p>
+                                <p class="contacts_text">
+                                    114 East 98th Street, Unit 4W<br>
+                                    900 Byscayne Brickell<br>
+                                    1220 Dixie Highway, Coal Gables
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            <div id="about">
+                    <div id="footer-wrapper">
+                        <div id="footer-menu">
+                            <ul>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">Partner</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Terms&Services</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                            <span class="copyright">2014&copy;HOME<span class="green">61</span>.</span>
+                            <span class="copyright">All Rights Reserved.</span>
+                        </div>
+                        <div id="social">
+                            <a href="https://www.linkedin.com"><img src="images/In.png"></a>
+                            <a href="https://www.google.com"><img src="images/google.png"></a>
+                            <a href="https://www.twitter.com"><img src="images/twitter.png"></a>
+                            <a href="https://www.facebook.com"><img src="images/facebook.png"></a>
+                        </div>
+                    </div>
+                </div>
+            <div id="copyright">
                 <div class="copyright-text">
                     <img src="images/home_small.png">
                     Fair Housing & Equal Opportunity<br>
@@ -225,5 +302,6 @@
                     The real estate listing data with this icon IDX comes from the SouthEast-Florida Region Multiple Listing Service system.
                 </div>
             </div>
+        </div>
     </body>
 </html>
