@@ -10,86 +10,61 @@
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
     </head>
     <body>
-        <div id="header_mobile" class="container-fluid visible-xs">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+    <div class="container-fluid main_header">
+        <div class="row">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
                         <div class="head_logo">
-                            <img src="images/home.png">
+                            <img class="navbar-logo" src="images/home.png">
                             <span class="logo-text">HOME
                                 <span class="green">61</span>
                             </span>
                             <span class="beta">BETA</span>
                         </div>
-                        <div class="head_phone mobile">
-                            <img src="images/phone.png">
-                            <span class="phone">+1 (844) 843-6161</span>
-                        </div>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#">Restals</a></li>
-                            <li><a href="#">Sales</a></li>
-                            <li><a href="#">My Homes</a></li>
-                            <li><a href="#">My Calendar</a></li>
-                            <li><a href="#">Neighborhoods</a></li>
-                            <li>
-                                <div class="profile-link mobile">
-                                    <img src="images/profile.png">
-                                    <a href="#">My Profile</a>
-                                    <img src="images/arrow_small.png">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listings-link listings-link-mobile">
-                                    <a href="#">Post your listings</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-            </nav>
-        </div>
-        <div id="header" class="container-fluid hidden-xs">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-2 head_logo">
-                    <img src="images/home.png">
-                    <span class="logo-text">HOME
-                        <span class="green">61</span>
-                    </span>
-                    <span class="beta">BETA</span>
+                    </a>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-2 head_phone">
-                    <img src="images/phone.png">
-                    <span class="phone">+1 (844) 843-6161</span>
-                </div>
-                <div id="head_profile" class="col-sm-12 col-md-4 col-lg-2">
-                    <img src="images/profile.png">
-                    <div class="profile-link">
-                        <a href="#">My Profile</a>
-                        <img src="images/arrow_small.png">
-                    </div>
-                    <div class="listings-link">
-                        <a href="#">Post your listings</a>
-                    </div>
-                </div>
-                <div id="head_menu" class="col-sm-12 col-md-8 col-lg-4">
-                    <ul class="head-menu">
-                        <li><a href="#">Restals</a></li>
-                        <li><a href="#">Sales</a></li>
-                        <li><a href="#">My Homes</a></li>
-                        <li><a href="#">My Calendar</a></li>
-                        <li><a href="#">Neighborhoods</a></li>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">
+                                <img src="images/phone.png">
+                                <span class="phone">+1 (844) 843-6161</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="main_menu" href="#">Restals</a></li>
+                        <li><a class="main_menu" href="#">Sales</a></li>
+                        <li><a class="main_menu" href="#">My Homes</a></li>
+                        <li><a class="main_menu" href="#">My Calendar</a></li>
+                        <li><a class="main_menu" href="#">Neighborhoods</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="false"><img src="images/profile.png"> My Profile<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">My Profile</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a class="main_menu" href="#">Post your listings</a></li>
                     </ul>
                 </div>
-            </div>
-        </div >
+            </nav>
+        </div>
+    </div>
         <div id="main" class="container-fluid">
                 <div id="application_header">
                     <p class="text-annotation-small">HOME > RENTAL APPLICATION</p>
